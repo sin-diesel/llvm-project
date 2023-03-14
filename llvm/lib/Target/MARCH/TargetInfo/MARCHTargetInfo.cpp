@@ -16,7 +16,7 @@ using namespace llvm;
 Target llvm::TheMARCHTarget;
 
 extern "C" void LLVMInitializeMARCHTargetInfo() {
-  RegisterTarget<Triple::MARCH,
+  RegisterTarget<Triple::march,
                  /*HasJIT=*/false>
-      X(TheMARCHTarget, "MARCH", "MARCH (32-bit simhulator arch)", "MARCH");
+      X(TheMARCHTarget, "MARCH", "MARCHS (64-bit sim arch)", "MARCH");
 }

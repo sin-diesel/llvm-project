@@ -21,7 +21,7 @@
 //===----------------------------------------------------------------------===//
 
 // Generic MARCH Format
-class mARCHInst<bits<8> op, dag outs, dag ins, string asmstr, list<dag> pattern>: Instruction
+class MARCHInst<bits<8> op, dag outs, dag ins, string asmstr, list<dag> pattern>: Instruction
 {
   // Inst and Size: for tablegen(... -gen-emitter) and
   // tablegen(... -gen-disassembler) in CMakeLists.txt
